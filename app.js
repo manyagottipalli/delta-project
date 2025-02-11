@@ -96,6 +96,10 @@ passport.deserializeUser(User.deserializeUser()); // to remove info of user
     next();
  });
 
+
+
+ 
+  
 //  app.get("/register", async (req,res) => {
 //     let fakeUser = new User ({
 //         email:"student@gmail.com",
