@@ -21,7 +21,9 @@ router
  // new route this is written up because when written down it taking new as id and searches so error will come
  router.get("/new",isLoggedin,listingController.renderNewform);
 
+//Search
 
+router.get("/search", wrapAsync(listingController.search));
 router
 .route("/:id")
 .get(wrapAsync(listingController.showroute)) //show route
